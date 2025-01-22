@@ -5,9 +5,32 @@
 }
 
 body {
-    background-image: url('imagens/fundo-madeira.jpg');
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 100vw;
+    background: black url('imagens/fundo-madeira.jpg') top center no-repeat fixed;
+            background-size: cover;
     
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#celular {
+    position: absolute;
+    width: 311px;
+    height: 627px;
+    background: url('imagens/frame-iphone.png') left top no-repeat fixed;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 472px;
 }
